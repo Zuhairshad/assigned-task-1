@@ -1,0 +1,315 @@
+/* Navbar */
+nav {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.logo p {
+  text-decoration: none;
+  font-family: ubuntu;
+  color: white;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  display: inline-block;
+}
+
+ul.menu li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+ul.menu li a:hover {
+  background-color: gray;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Main Section */
+#main {
+  text-align: center;
+  padding: 50px;
+  background-color: lightgray
+}
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #f4474d;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+
+/* WhyChooseUs */
+#whyUs {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to prevent overlap with products */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .item {
+    flex-basis: 100%;
+  }
+}
+
+.whyUs-h2 {
+  color: black;
+  font-family: merriweather sans;
+  font-weight: bold;
+  text-align: center;
+}
+
+.paraWhy {
+  text-align: center;
+  font-family: merriweather sans;
+  font-weight: bold;
+}
+
+.whyusUl {
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.paraWhy-2 {
+  color: #f4474d;
+  text-align: center;
+}
+
+.shipping {
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+}
+
+.mbGurantee {
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+}
+
+.cusSupport {
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+}
+/* Products Section */
+.product-section {
+  padding: 50px;
+  overflow: hidden; /* Add overflow: hidden */
+  background-color: lightgray;
+}
+.producttopSection{
+  background-color: lightgray;
+  height: 150px;
+}
+.p-p{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: ubuntu;
+  text-align: center;
+  padding-top: 2px;
+
+}
+.saleText{
+  font-weight: bolder;
+  font-family: ubuntu;
+  padding-left: 50px;
+}
+.upto{
+  font-weight: bolder;
+  font-family: ubuntu;
+  padding-left: 50px;
+  color: #f4474d;
+}
+.button{
+  display: flex;
+  justify-content: right;
+  padding-right: 130px;
+  padding-bottom: 10px;
+}
+.btn-1{
+
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  font-weight: bolder;
+  color: #262626;
+  font-size: 10px;
+  background: #fffcff;
+  padding: 7px 15px 7px 15px;
+  border: solid #454545 1px;
+  text-decoration: none;
+}
+.container-3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product {
+  flex: 0 0 24%;
+  margin-bottom: 50px;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: lightgray;
+  color: #000;
+}
+
+.price {
+  margin: 0;
+}
+
+.add-to-cart {
+  padding: 5px 10px;
+  background-color: #f4474d;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 28px;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.p-f2 {
+  color: #000;
+  font-size: 12px;
+  font-family: ubuntu;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/* Footer Section */
+.footer-section {
+  padding: 30px;
+  background-color: #000;
+  text-align: center;
+
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.p-f {
+  flex: 0 0 25%;
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.fa-brands {
+  margin: 0 5px;
+}
+
+.p-fa {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  font-family: ubuntu;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    flex-basis: 100%;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .menu-icon:hover {
+    background-color: gray;
+  }
+
+  .menu.show {
+    display: block;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: black;
+  }
+}
+i{
+  color: #000;
+  justify-content: center;
+}
